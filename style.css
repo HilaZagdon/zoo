@@ -54,6 +54,8 @@ body {
   font-weight: 600;
   color: #ffffff;
   border: #ffffff 2px solid;
+  text-shadow: 2px 2px 2px black;
+  background-color: rgb(99, 99, 88);
 }
 
 .main {
