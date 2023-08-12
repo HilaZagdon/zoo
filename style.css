@@ -1,0 +1,181 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .container-zoo {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-areas:
+      "headr headr headr headr headr"
+      "main main main main main"
+      "main main main main main"
+      "main main main main main"
+      "main main main main main"
+      "main main main main main"
+      "main main main main main"
+      "main main main main main"
+      "main main main main main"
+      "footr footr footr footr footr";
+  }
+  .sidebar {
+    display: none;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .navbar-nav {
+    transform: translate(60vw, 0);
+    position: relative;
+    background-color: black;
+    z-index: -1;
+  }
+
+  #hamburger {
+    background-color: transparent;
+    border-radius: 10px;
+    display: unset;
+    margin-left: 50vw;
+    padding: 0;
+  }
+
+  #hamburger:hover + .navbar-nav {
+    animation: hamburger 0.3s linear forwards;
+  }
+
+  @keyframes hamburger {
+    0% {
+      transform: translate(60vw, 0);
+    }
+    100% {
+      transform: translate(60vw, 20vh);
+    }
+  }
+}
+
+.container-zoo {
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-areas:
+    "headr headr headr headr headr"
+    "sidebar main main main main"
+    "sidebar main main main main"
+    "sidebar main main main main"
+    "sidebar main main main main"
+    "sidebar main main main main"
+    "sidebar main main main main"
+    "sidebar main main main main"
+    "sidebar main main main main"
+    "footr footr footr footr footr";
+}
+
+.headr {
+  grid-area: headr;
+  background-image: linear-gradient(
+    to right,
+    rgb(35, 88, 35),
+    lightgreen,
+    rgb(197, 212, 192)
+  );
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-image: linear-gradient(
+    to top,
+    rgb(35, 88, 35),
+    lightgreen,
+    rgb(197, 212, 192)
+  );
+}
+
+.container-side {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.continents {
+  text-align: center;
+  font-size: 3.5vh;
+  width: 19vw;
+  cursor: pointer;
+  padding: 1vh 1vw;
+  border-radius: 2vh;
+  border: black 2px solid;
+}
+
+.main {
+  grid-area: main;
+  background-image: url(pictures/this\ one.webp);
+  background-size: cover;
+  z-index: -2;
+}
+
+.footr {
+  font-weight: 600;
+  font-size: 1.5vh;
+  grid-area: footr;
+  background-image: linear-gradient(
+    to left,
+    rgb(35, 88, 35),
+    lightgreen,
+    rgb(197, 212, 192)
+  );
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  margin-left: 0.1vw;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#credit {
+  display: block;
+}
+
+#hamburger {
+  display: none;
+}
+
+.navbar {
+  margin-top: 1vh;
+  background-image: linear-gradient(
+    to left,
+    rgb(35, 88, 35),
+    lightgreen,
+    rgb(197, 212, 192)
+  );
+}
+
+.animal-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.animal-card img {
+  width: 33%;
+}
