@@ -24,9 +24,9 @@ body {
 .headr {
   grid-area: headr;
   background-image: linear-gradient(
-    to left,
+    to right,
     rgb(35, 88, 35),
-    lightgreen,
+    rgb(174, 230, 174),
     rgb(197, 212, 192)
   );
 }
