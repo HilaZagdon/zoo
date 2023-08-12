@@ -24,7 +24,7 @@ body {
 .headr {
   grid-area: headr;
   background-image: linear-gradient(
-    to right,
+    to left,
     rgb(35, 88, 35),
     lightgreen,
     rgb(197, 212, 192)
@@ -102,12 +102,6 @@ a:hover {
 
 .navbar {
   margin-top: 1vh;
-  background-image: linear-gradient(
-    to left,
-    rgb(35, 88, 35),
-    lightgreen,
-    rgb(197, 212, 192)
-  );
 }
 
 .animal-container {
@@ -174,9 +168,10 @@ p {
   }
 
   .navbar-nav {
-    transform: translate(100vw, 20vh);
+    transform: translate(100vw, 0.2vh);
     position: relative;
     background-color: black;
+    z-index: 2;
   }
 
   #hamburger {
@@ -193,10 +188,25 @@ p {
 
   @keyframes hamburger {
     0% {
-      transform: translate(100vw, 20vh);
+      transform: translate(100vw, 0.2vh);
     }
     100% {
-      transform: translate(65vw, 20vh);
+      transform: translate(60vw, 0.2vh);
     }
+  }
+
+  .animal-container {
+    margin-top: 80vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .animal-card {
+    width: 70%;
+  }
+
+  .animal-card img {
+    width: 100%;
   }
 }
