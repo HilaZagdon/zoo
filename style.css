@@ -52,8 +52,8 @@ body {
   padding: 1vh 1vw;
   border-radius: 2vh;
   font-weight: 600;
+  color: #ffffff;
   border: #ffffff 2px solid;
-  background-color: rgba(217, 230, 213, 0.581);
 }
 
 .main {
